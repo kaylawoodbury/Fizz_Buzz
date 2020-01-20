@@ -1,7 +1,7 @@
 require './lib/fizz_buzz'
 
 describe 'fizz_buzz' do
-   it 'return 1 if number is 1' do
+   it 'returns 1 if number is 1' do
     expect(fizz_buzz(1)).to eq 1 
    end
 
@@ -18,7 +18,7 @@ describe 'fizz_buzz' do
     end
 
     it 'returns error not if input is a string' do 
-        expect(fizz_buzz('Sting Test')).to eq 'Not a number'
+        expect(fizz_buzz('String Test')).to eq 'Not a number'
     end
 
     it 'returns error not if input is a positive number' do 
