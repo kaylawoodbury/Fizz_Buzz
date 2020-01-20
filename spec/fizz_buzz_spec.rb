@@ -16,4 +16,12 @@ describe 'fizz_buzz' do
     it 'returns fizzbuzz if number is divisible by 15' do
       expect(fizz_buzz(15)).to eq 'FizzBuzz'
     end
+
+    it 'returns error not if input is a string' do 
+        expect(fizz_buzz('Sting Test')).to eq 'Not a number'
+    end
+
+    it 'returns error not if input is a positive number' do 
+        expect(fizz_buzz(-11)).to eq 'Not a positive number'
+    end
 end
